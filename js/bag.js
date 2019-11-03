@@ -261,7 +261,7 @@ var arr1 = [];
 }(Element.prototype));
 window.onload = function() {
   bagBill.innerHTML = localStorage.getItem('countBag');
-  if (this.bagBill.innerHTML !== '') {
+  if (this.totalPrice.innerHTML !== '') {
     document.getElementById('advertisement').style.display = 'none';
     buy.style.display = 'flex';
   }
