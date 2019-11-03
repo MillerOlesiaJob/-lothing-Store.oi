@@ -17,16 +17,7 @@ var allProducts = [];
 var firstArr = [];
 
 
-hamburger.addEventListener('click', function() {
-  hamburger.classList.toggle('active');
-  // nav.style.display = 'block';
-  nav.classList.toggle('active');
 
-})
-
-document.getElementById('icon').addEventListener('click', function() {
-  document.getElementById('window').classList.toggle('active-window');
-})
 
 
 var catalog = [{
@@ -44,7 +35,7 @@ var catalog = [{
   color: ['Golden'],
   sizes: ['UK 17','UK 18'],
   thumbnail: 'img/blue.png', // заменить на путь к изображению, извлеченному из макета каталога
-  preview: ['full image path 1', 'full image path 2', 'full image path 3'] // заменить путями к изображениям, извлеченным из макета элемента
+  preview: ['img/blue1.jpg', 'img/blue.png', 'img/blue2.jpg'] // заменить путями к изображениям, извлеченным из макета элемента
 }, {
   id: '07cf6ce2-6eee-4e78-a441-f257fdea7ed6',
   dateAdded: '2017-06-12T15:35:13.000Z',
@@ -57,10 +48,10 @@ var catalog = [{
   category: 'women',
   brand: 'Adidas',
   fashion: 'Casual style',
-  color: ['Black', 'White'],
+  color: ['Black', 'White', 'Khaki'],
   sizes: ['UK 18'],
   thumbnail: 'img/bohemian.png', // replace with image extracted from item layout
-  preview: ['full image path 1', 'full image path 2', 'full image path 3'] // replace with paths to images extracted from item layout
+  preview: ['img/bohemian.png', 'img/bohemian1.png', 'img/bohemian2.jpg'] // replace with paths to images extracted from item layout
 }, {
   id: '0fdfa061-838d-42ab-ae06-99c66115f633',
   dateAdded: '2017-02-12T11:14:29.000Z',
@@ -91,7 +82,7 @@ var catalog = [{
   brand: 'New Balance',
   color: ['Blue'],
   sizes: ['UK 18'],
-  thumbnail: 'img/jeans2.png', // replace with image extracted from item layout
+  thumbnail: 'img/view_item.png', // replace with image extracted from item layout
   preview: ['full image path 1', 'full image path 2', 'full image path 3'] // replace with paths to images extracted from item layout
 }, {
   id: '5677f851-1c4a-4e9b-80e9-16d1e6265257',
@@ -148,7 +139,7 @@ var catalog = [{
   description: '',
   discountedPrice: 76.25,
   price: 76.25,
-  productType: 'Coats & Jackets',
+  productType: 'Coats',
   hasNew: true,
   category: 'women',
   fashion: 'Casual style',
@@ -172,14 +163,14 @@ var catalog = [{
   color: ['Phillipa wash'],
   sizes: ['UK 17','UK 18'],
   thumbnail: 'img/black_f.png', // replace with image extracted from item layout
-  preview: ['full image path 1', 'full image path 2', 'full image path 3'] // replace with paths to images extracted from item layout
+  preview: ['img/black_f1.png', 'img/black_f2.png', 'img/black_f.png'] // replace with paths to images extracted from item layout
 }, {
   id: '9ded7821-e510-4a16-ba9f-57c1e3442ad8',
   dateAdded: '2017-07-19T15:11:04.000Z',
   title: 'Turtle Neck Jumper in Rib',
   description: '',
   discountedPrice: 130.25,
-  productType: 'Coats & Jackets',
+  productType: 'Coats',
   price: 130.25,
   hasNew: false,
   category: 'women',
@@ -188,7 +179,7 @@ var catalog = [{
   color: ['Golden', 'Blue', 'Green'],
   sizes: ['UK 17','UK 18'],
   thumbnail: 'img/coat.png', // replace with image extracted from item layout
-  preview: ['full image path 1', 'full image path 2', 'full image path 3'] // replace with paths to images extracted from item layout
+  preview: ['img/coat.png', 'img/coat2.jpg', 'img/coat3.jpg'] // replace with paths to images extracted from item layout
 }, {
   id: 'bec71daa-d133-473d-bbb0-1ee0a427a17d',
   dateAdded: '2017-03-09T17:51:45.000Z',
@@ -203,7 +194,7 @@ var catalog = [{
   fashion: 'Casual style',
   color: ['Dark Blue'],
   sizes: ['UK 19'],
-  thumbnail: 'img/jeans2.png', // replace with image extracted from item layout
+  thumbnail: 'img/view_item.png', // replace with image extracted from item layout
   preview: ['full image path 1', 'full image path 2', 'full image path 3'] // replace with paths to images extracted from item layout
 }, {
   id: 'ccc8a5d5-7cdf-4706-95f2-abc64761400d',
@@ -249,10 +240,10 @@ var catalog = [{
   productType: 'Jersey Tops',
   category: 'women',
   fashion: 'Casual style',
-  color: ['Blue'],
+  color: ['Blue','White'],
   sizes: ['UK 18'],
   thumbnail: 'img/white.png', // replace with image extracted from item layout
-  preview: ['full image path 1', 'full image path 2', 'full image path 3'] // replace with paths to images extracted from item layout
+  preview: ['img/white.png', 'img/white1.jpg', 'img/white2.jpg'] // replace with paths to images extracted from item layout
 }];
 
 bestOffer = {
@@ -317,7 +308,17 @@ window.onload = function() {
     bagCount.innerHTML = localStorage.getItem('countBag');
 		bagBill.innerHTML = localStorage.getItem('billBag');
     }
-	}
+  }
+hamburger.addEventListener('click', function() {
+    hamburger.classList.toggle('active');
+    // nav.style.display = 'block';
+    nav.classList.toggle('active');
+  
+})
+  
+document.getElementById('icon').addEventListener('click', function() {
+  document.getElementById('window').classList.toggle('active-window');
+  })
 
 addBag1.addEventListener('click', function() {
     bagChange();

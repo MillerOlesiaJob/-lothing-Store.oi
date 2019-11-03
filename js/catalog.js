@@ -104,32 +104,30 @@ var catalog = [{
   sizes: ['UK 17','UK 18'],
   thumbnail: 'img/dress.png', // replace with image extracted from item layout
   preview: ['full image path 1', 'full image path 2', 'full image path 3'] // replace with paths to images extracted from item layout
-}, 
-// {
-//   id: '80d32566-d81c-4ba0-9edf-0eceda3b4360',
-//   dateAdded: '2017-01-01T13:26:14.000Z',
-//   title: 'Dark classic fit suit',
-//   description: 'Featuring fine Italian wool, this elegant suit has pick-stitch edging, cascade buttons at the cuffs',
-//   discountedPrice: 180.6,
-//   price: 180.6,
-//   productType: 'Jersey Tops',
-//   hasNew: false,
-//   category: 'men',
-//   brand: 'Chi Chi London',
-//   fashion: 'Classical style',
-//   color: ['Black', 'Blue'],
-//   sizes: ['UK 52', 'UK 54', 'UK 56'],
-//   thumbnail: 'img/men_fuul.png', // replace with image extracted from item layout
-//   preview: ['img/men_left.png', 'img/men_middle.png', 'img/men-right.png'] // replace with paths to images extracted from item layout
-// }, 
-{
+}, {
+  id: '80d32566-d81c-4ba0-9edf-0eceda3b4360',
+  dateAdded: '2017-01-01T13:26:14.000Z',
+  title: 'Dark classic fit suit',
+  description: 'Featuring fine Italian wool, this elegant suit has pick-stitch edging, cascade buttons at the cuffs',
+  discountedPrice: 180.6,
+  price: 180.6,
+  productType: 'Jersey Tops',
+  hasNew: false,
+  category: 'men',
+  brand: 'Chi Chi London',
+  fashion: 'Classical style',
+  color: ['Black', 'Blue'],
+  sizes: ['UK 52', 'UK 54', 'UK 56'],
+  thumbnail: 'img/men_fuul.png', // replace with image extracted from item layout
+  preview: ['img/men_left.png', 'img/men_middle.png', 'img/men-right.png'] // replace with paths to images extracted from item layout
+}, {
   id: '8b300772-eee3-4ff1-b091-e89f17e0e469',
   dateAdded: '2017-08-10T14:59:00.000Z',
   title: 'Neck Knitted Jumper',
   description: '',
   discountedPrice: 76.25,
   price: 76.25,
-  productType: 'Coats & Jackets',
+  productType: 'Coats',
   hasNew: true,
   category: 'women',
   fashion: 'Casual style',
@@ -149,7 +147,7 @@ var catalog = [{
   hasNew: true,
   brand: 'Chi Chi London',
   category: 'women',
-  fashion: 'Sport',
+  fashion: 'Casual style',
   color: ['Phillipa wash'],
   sizes: ['UK 17','UK 18'],
   thumbnail: 'img/black_f.png', // replace with image extracted from item layout
@@ -160,7 +158,7 @@ var catalog = [{
   title: 'Turtle Neck Jumper in Rib',
   description: '',
   discountedPrice: 130.25,
-  productType: 'Coats & Jackets',
+  productType: 'Coats',
   price: 130.25,
   hasNew: false,
   category: 'women',
@@ -385,15 +383,17 @@ var sortItem = function(item,arr) {
       
         break;
         case 'size':  
-        for (let j = 0; j < catalog[i].size.length; j++) {
+        for (let j = 0; j < catalog[i].sizes.length; j++) {
           if (item.firstChild.innerHTML == catalog[i].sizes[j]) {
             newItemArr.push(catalog[i]);
           }
         }
       
         break;
-        case 'product type':  
-        if (item.firstChild.innerHTML == catalog[i].productType) {
+        case 'product type': 
+        console.log(item.firstChild.innerHTML.replace('&amp;','')) 
+        console.log(catalog[i].productType.replace('&',''))
+        if (item.firstChild.innerHTML.replace('&amp','') == catalog[i].productType.replace('&','')) {
           newItemArr.push(catalog[i]);
           }
       
