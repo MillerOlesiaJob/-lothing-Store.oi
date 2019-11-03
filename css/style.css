@@ -707,7 +707,8 @@ h2 {
   color: #a8a8a8; }
 
 .footer {
-  padding-top: 30px;
+  margin-top: 15px;
+  padding-top: 15px;
   width: 100%;
   border-top: 1px solid #f4f4f4; }
   @media (min-width: 768px) and (max-width: 1023px) {
@@ -848,7 +849,8 @@ h2 {
       font-size: 14px;
       font-family: "Roboto", sans-serif;
       padding-bottom: -5px;
-      line-height: 40px; }
+      line-height: 40px;
+      cursor: pointer; }
       @media (min-width: 375px) and (max-width: 767px) {
         .footer__information-item_link {
           font-size: 12px;
@@ -1138,12 +1140,10 @@ h2 {
     font-weight: bold; } }
 
 .bag-button {
+  display: none;
   width: 340px;
   height: 75px;
   border: 1px solid #e5e5e5;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
@@ -1168,7 +1168,8 @@ h2 {
   align-items: center;
   font-size: 24px;
   font-family: "OpenSans", sans-serif;
-  font-weight: bold; }
+  font-weight: bold;
+  text-align: center; }
 
 #advertisement {
   display: block;
@@ -1178,7 +1179,8 @@ h2 {
   align-items: center;
   font-size: 24px;
   font-family: "OpenSans", sans-serif;
-  font-weight: bold; }
+  font-weight: bold;
+  text-align: center; }
 
 #item-old-price {
   display: none;

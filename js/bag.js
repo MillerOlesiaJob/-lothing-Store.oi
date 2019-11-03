@@ -263,6 +263,7 @@ window.onload = function() {
   bagBill.innerHTML = localStorage.getItem('countBag');
   if (this.bagBill.innerHTML !== '') {
     document.getElementById('advertisement').style.display = 'none';
+    buy.style.display = 'flex';
   }
   goodsArr = JSON.parse(localStorage.getItem("productInfo"));
   stockFind(goodsArr);
