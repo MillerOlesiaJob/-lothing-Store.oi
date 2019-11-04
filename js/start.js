@@ -32,7 +32,7 @@ var catalog = [{
   brand: 'Adidas',
   category: 'women',
   fashion: 'Casual style',
-  color: ['Golden'],
+  color: ['Black', 'Blue', 'Golden'],
   sizes: ['UK 17','UK 18'],
   thumbnail: 'img/blue.png', // заменить на путь к изображению, извлеченному из макета каталога
   preview: ['img/blue1.jpg', 'img/blue.png', 'img/blue2.jpg'] // заменить путями к изображениям, извлеченным из макета элемента
@@ -51,7 +51,7 @@ var catalog = [{
   color: ['Black', 'White', 'Khaki'],
   sizes: ['UK 18'],
   thumbnail: 'img/bohemian.png', // replace with image extracted from item layout
-  preview: ['img/bohemian.png', 'img/bohemian1.png', 'img/bohemian2.jpg'] // replace with paths to images extracted from item layout
+  preview: ['img/bohemian.png', 'img/bohemian1.jpeg', 'img/bohemian2.jpg'] // replace with paths to images extracted from item layout
 }, {
   id: '0fdfa061-838d-42ab-ae06-99c66115f633',
   dateAdded: '2017-02-12T11:14:29.000Z',
@@ -67,7 +67,7 @@ var catalog = [{
   color: ['Black'],
   sizes: ['UK 18'],
   thumbnail: 'img/paris.png', // replace with image extracted from item layout
-  preview: ['full image path 1', 'full image path 2', 'full image path 3'] // replace with paths to images extracted from item layout
+  preview: ['', '', ''] // replace with paths to images extracted from item layout
 }, {
   id: '4a3d3c3e-9dc5-4d99-b33d-42b22e20dc0b',
   dateAdded: '2017-08-02T15:00:40.000Z',
@@ -111,28 +111,12 @@ var catalog = [{
   hasNew: false,
   category: 'women',
   fashion: 'Casual style',
-  color: ['White'],
+  color: ['White','Black', 'Blue'],
   brand: 'New Balance',
   sizes: ['UK 17','UK 18'],
   thumbnail: 'img/dress.png', // replace with image extracted from item layout
-  preview: ['full image path 1', 'full image path 2', 'full image path 3'] // replace with paths to images extracted from item layout
-}, {
-  id: '80d32566-d81c-4ba0-9edf-0eceda3b4360',
-  dateAdded: '2017-01-01T13:26:14.000Z',
-  title: 'Dark classic fit suit',
-  description: 'Featuring fine Italian wool, this elegant suit has pick-stitch edging, cascade buttons at the cuffs',
-  discountedPrice: 180.6,
-  price: 180.6,
-  productType: 'Jersey Tops',
-  hasNew: false,
-  category: 'men',
-  brand: 'Chi Chi London',
-  fashion: 'Classical style',
-  color: ['Black', 'Blue'],
-  sizes: ['UK 52', 'UK 54', 'UK 56'],
-  thumbnail: 'img/men_fuul.png', // replace with image extracted from item layout
-  preview: ['img/men_left.png', 'img/men_middle.png', 'img/men-right.png'] // replace with paths to images extracted from item layout
-}, {
+  preview: ['img/dress.png', 'img/dress1.jpg', 'img/dress2.jpg'] // replace with paths to images extracted from item layout
+},  {
   id: '8b300772-eee3-4ff1-b091-e89f17e0e469',
   dateAdded: '2017-08-10T14:59:00.000Z',
   title: 'Neck Knitted Jumper',
@@ -160,10 +144,10 @@ var catalog = [{
   brand: 'Chi Chi London',
   category: 'women',
   fashion: 'Casual style',
-  color: ['Phillipa wash'],
+  color: ['Phillipa wash', 'Blue', 'White'],
   sizes: ['UK 17','UK 18'],
   thumbnail: 'img/black_f.png', // replace with image extracted from item layout
-  preview: ['img/black_f1.png', 'img/black_f2.png', 'img/black_f.png'] // replace with paths to images extracted from item layout
+  preview: ['img/black_f1.jpg', 'img/black_f2.jpg', 'img/black_f.png'] // replace with paths to images extracted from item layout
 }, {
   id: '9ded7821-e510-4a16-ba9f-57c1e3442ad8',
   dateAdded: '2017-07-19T15:11:04.000Z',
@@ -179,7 +163,7 @@ var catalog = [{
   color: ['Golden', 'Blue', 'Green'],
   sizes: ['UK 17','UK 18'],
   thumbnail: 'img/coat.png', // replace with image extracted from item layout
-  preview: ['img/coat.png', 'img/coat2.jpg', 'img/coat3.jpg'] // replace with paths to images extracted from item layout
+  preview: ['img/coat.png', 'img/coat1.jpeg', 'img/coat3.jpg'] // replace with paths to images extracted from item layout
 }, {
   id: 'bec71daa-d133-473d-bbb0-1ee0a427a17d',
   dateAdded: '2017-03-09T17:51:45.000Z',
@@ -195,7 +179,7 @@ var catalog = [{
   color: ['Dark Blue'],
   sizes: ['UK 19'],
   thumbnail: 'img/view_item.png', // replace with image extracted from item layout
-  preview: ['full image path 1', 'full image path 2', 'full image path 3'] // replace with paths to images extracted from item layout
+  preview: ['', '', ''] // replace with paths to images extracted from item layout
 }, {
   id: 'ccc8a5d5-7cdf-4706-95f2-abc64761400d',
   dateAdded: '2017-06-09T17:32:17.000Z',
@@ -208,10 +192,10 @@ var catalog = [{
   hasNew: false,
   category: 'women',
   fashion: 'Casual style',
-  color: ['Blue', 'Black','Green'],
+  color: ['Black'],
   sizes: ['UK 19'],
   thumbnail: 'img/grey.png', // replace with image extracted from item layout
-  preview: ['full image path 1', 'full image path 2', 'full image path 3'] // replace with paths to images extracted from item layout
+  preview: ['', '', ''] // replace with paths to images extracted from item layout
 }, {
   id: 'e50a3153-7833-4b85-b412-1a39d215fd38',
   dateAdded: '2017-04-25T12:14:41.000Z',
@@ -227,7 +211,7 @@ var catalog = [{
   color: ['Raw umber', 'Dark blue'],
   sizes: ['UK 18', 'UK 19'],
   thumbnail: 'img/khaki.png', // replace with image extracted from item layout
-  preview: ['full image path 1', 'full image path 2', 'full image path 3'] // replace with paths to images extracted from item layout
+  preview: ['img/khaki.png', 'img/khaki1.jpg', 'full image path 3'] // replace with paths to images extracted from item layout
 }, {
   id: 'ff665110-5e7f-435d-b1b4-651c3d5050ca',
   brand: 'Antipodium',
@@ -240,7 +224,7 @@ var catalog = [{
   productType: 'Jersey Tops',
   category: 'women',
   fashion: 'Casual style',
-  color: ['Blue','White'],
+  color: ['Black','White','Green'],
   sizes: ['UK 18'],
   thumbnail: 'img/white.png', // replace with image extracted from item layout
   preview: ['img/white.png', 'img/white1.jpg', 'img/white2.jpg'] // replace with paths to images extracted from item layout
@@ -300,7 +284,6 @@ var clientGood2 = {
 window.onload = function() {
   let a = localStorage.getItem('billBag');
   alert('hello')
-  console.log(a)
   if (a == '£NaN') {
     bagCount.innerHTML = '';
 		bagBill.innerHTML = '';
@@ -321,28 +304,23 @@ document.getElementById('icon').addEventListener('click', function() {
   })
 
 addBag1.addEventListener('click', function() {
-    bagChange();
-    console.log('hel')
-    var allProducts = JSON.parse(localStorage.getItem("productInfo"));
-    if (allProducts == null || allProducts.length == undefined) {
-      firstArr.push(clientGood1);
-      firstArr.push(clientGood2);
+  bagChange();
+  var allProducts = JSON.parse(localStorage.getItem("productInfo"));
+  if (allProducts == null || allProducts.length == undefined) {
+    firstArr.push(clientGood1);
+    firstArr.push(clientGood2);
+
+    localStorage.setItem("productInfo", JSON.stringify(firstArr));
+  } else {
+    allProducts.push(clientGood1);
+    allProducts.push(clientGood2);
+    localStorage.setItem("productInfo", JSON.stringify(allProducts));
+  }
   
-      localStorage.setItem("productInfo", JSON.stringify(firstArr));
-    } else {
-      allProducts.push(clientGood1);
-      allProducts.push(clientGood2);
-      localStorage.setItem("productInfo", JSON.stringify(allProducts));
-    }
-    
-    document.location.href = "shopping-bag.html";
-    
-    
-  
-  })
+  document.location.href = "shopping-bag.html";
+})
 addBag.addEventListener('click', function() {
   bagChange();
-  console.log('hel')
   var allProducts = JSON.parse(localStorage.getItem("productInfo"));
   if (allProducts == null || allProducts.length == undefined) {
 		firstArr.push(clientGood1);
@@ -354,24 +332,15 @@ addBag.addEventListener('click', function() {
 		allProducts.push(clientGood2);
     localStorage.setItem("productInfo", JSON.stringify(allProducts));
 	}
-	
   document.location.href = "shopping-bag.html";
-
-  
-  
-
 })
 
 var bagChange = function() {
   let count = +bagCount.innerHTML.replace(/[\(\)]+/g, '') + 2;
   localStorage.setItem('countBag', '('+count+')');
   bagCount.innerHTML = '('+count+')';
-  // let bill = 
-  console.log(bagBill.innerHTML);
-  console.log(itemPrice.innerHTML.replace('=£', ''))
   re = /'=','£'/
   let bill = (+bagBill.innerHTML.replace('£', '') + (+itemPrice.innerHTML.replace('=£', ''))).toFixed(2);
-  console.log(bagBill.innerHTML)
 	bagBill.innerHTML = '£' + bill;
 	localStorage.setItem('billBag', '£' + bill);
 } 
@@ -415,7 +384,6 @@ container.addEventListener('click', function(event) {
 })
 
 var showNewItem = function(up) {
-	console.log(up.parentElement.nextElementSibling.nextElementSibling.firstElementChild.nextElementSibling)
 	let i = bestOffer.left.indexOf(up.parentElement.nextElementSibling.id)
 	if (i == 0) {
 		up.parentElement.nextElementSibling.id = bestOffer.left[2];
@@ -433,8 +401,6 @@ var showNewItem = function(up) {
 		}
 	} 
 	discountSum();
-	
-
 }
 
 container.addEventListener('click', function(event) {
@@ -474,11 +440,9 @@ container.addEventListener('click', function(event) {
 	if(!upR) return;
 	if(!container.contains(upR)) return;
 	showNewItemRight(upR);
-	console.log(upR)
 })
 
 var showNewItemRight = function(upR) {
-	console.log(upR)
 	let i = bestOffer.right.indexOf(upR.parentElement.nextElementSibling.id)
 	if (i == 0) {
 		upR.parentElement.nextElementSibling.id = bestOffer.right[1];
@@ -496,8 +460,6 @@ var showNewItemRight = function(upR) {
 		}
 	} 
 	discountSum();
-
-
 }
 
 container.addEventListener('click', function(event) {
@@ -546,11 +508,9 @@ newP.innerHTML = '=£' + (+old.innerHTML.replace('£','') - 15).toFixed(2);
 }
 
 container2.addEventListener('click', function(event) {
-  console.log('hello')
   let view2 = event.target.closest('.main__bestoffers-stock-item-image');
   if(!view2) return;
   if(!container2.contains(view2)) return;
-  console.log(view2);
   showItem2(view2);
 }) // для передачи информации о товаре на страницу продукта
 

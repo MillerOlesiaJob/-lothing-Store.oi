@@ -20,7 +20,7 @@ var catalog = [{
   brand: 'Adidas',
   category: 'women',
   fashion: 'Casual style',
-  color: ['Golden'],
+  color: ['Black', 'Blue', 'Golden'],
   sizes: ['UK 17','UK 18'],
   thumbnail: 'img/blue.png', // заменить на путь к изображению, извлеченному из макета каталога
   preview: ['img/blue1.jpg', 'img/blue.png', 'img/blue2.jpg'] // заменить путями к изображениям, извлеченным из макета элемента
@@ -39,7 +39,7 @@ var catalog = [{
   color: ['Black', 'White', 'Khaki'],
   sizes: ['UK 18'],
   thumbnail: 'img/bohemian.png', // replace with image extracted from item layout
-  preview: ['img/bohemian.png', 'img/bohemian1.png', 'img/bohemian2.jpg'] // replace with paths to images extracted from item layout
+  preview: ['img/bohemian.png', 'img/bohemian1.jpeg', 'img/bohemian2.jpg'] // replace with paths to images extracted from item layout
 }, {
   id: '0fdfa061-838d-42ab-ae06-99c66115f633',
   dateAdded: '2017-02-12T11:14:29.000Z',
@@ -55,7 +55,7 @@ var catalog = [{
   color: ['Black'],
   sizes: ['UK 18'],
   thumbnail: 'img/paris.png', // replace with image extracted from item layout
-  preview: ['full image path 1', 'full image path 2', 'full image path 3'] // replace with paths to images extracted from item layout
+  preview: ['', '', ''] // replace with paths to images extracted from item layout
 }, {
   id: '4a3d3c3e-9dc5-4d99-b33d-42b22e20dc0b',
   dateAdded: '2017-08-02T15:00:40.000Z',
@@ -99,28 +99,12 @@ var catalog = [{
   hasNew: false,
   category: 'women',
   fashion: 'Casual style',
-  color: ['White'],
+  color: ['White','Black', 'Blue'],
   brand: 'New Balance',
   sizes: ['UK 17','UK 18'],
   thumbnail: 'img/dress.png', // replace with image extracted from item layout
-  preview: ['full image path 1', 'full image path 2', 'full image path 3'] // replace with paths to images extracted from item layout
-}, {
-  id: '80d32566-d81c-4ba0-9edf-0eceda3b4360',
-  dateAdded: '2017-01-01T13:26:14.000Z',
-  title: 'Dark classic fit suit',
-  description: 'Featuring fine Italian wool, this elegant suit has pick-stitch edging, cascade buttons at the cuffs',
-  discountedPrice: 180.6,
-  price: 180.6,
-  productType: 'Jersey Tops',
-  hasNew: false,
-  category: 'men',
-  brand: 'Chi Chi London',
-  fashion: 'Classical style',
-  color: ['Black', 'Blue'],
-  sizes: ['UK 52', 'UK 54', 'UK 56'],
-  thumbnail: 'img/men_fuul.png', // replace with image extracted from item layout
-  preview: ['img/men_left.png', 'img/men_middle.png', 'img/men-right.png'] // replace with paths to images extracted from item layout
-}, {
+  preview: ['img/dress.png', 'img/dress1.jpg', 'img/dress2.jpg'] // replace with paths to images extracted from item layout
+},  {
   id: '8b300772-eee3-4ff1-b091-e89f17e0e469',
   dateAdded: '2017-08-10T14:59:00.000Z',
   title: 'Neck Knitted Jumper',
@@ -148,10 +132,10 @@ var catalog = [{
   brand: 'Chi Chi London',
   category: 'women',
   fashion: 'Casual style',
-  color: ['Phillipa wash'],
+  color: ['Phillipa wash', 'Blue', 'White'],
   sizes: ['UK 17','UK 18'],
   thumbnail: 'img/black_f.png', // replace with image extracted from item layout
-  preview: ['img/black_f1.png', 'img/black_f2.png', 'img/black_f.png'] // replace with paths to images extracted from item layout
+  preview: ['img/black_f1.jpg', 'img/black_f2.jpg', 'img/black_f.png'] // replace with paths to images extracted from item layout
 }, {
   id: '9ded7821-e510-4a16-ba9f-57c1e3442ad8',
   dateAdded: '2017-07-19T15:11:04.000Z',
@@ -167,7 +151,7 @@ var catalog = [{
   color: ['Golden', 'Blue', 'Green'],
   sizes: ['UK 17','UK 18'],
   thumbnail: 'img/coat.png', // replace with image extracted from item layout
-  preview: ['img/coat.png', 'img/coat2.jpg', 'img/coat3.jpg'] // replace with paths to images extracted from item layout
+  preview: ['img/coat.png', 'img/coat1.jpeg', 'img/coat3.jpg'] // replace with paths to images extracted from item layout
 }, {
   id: 'bec71daa-d133-473d-bbb0-1ee0a427a17d',
   dateAdded: '2017-03-09T17:51:45.000Z',
@@ -183,7 +167,7 @@ var catalog = [{
   color: ['Dark Blue'],
   sizes: ['UK 19'],
   thumbnail: 'img/view_item.png', // replace with image extracted from item layout
-  preview: ['full image path 1', 'full image path 2', 'full image path 3'] // replace with paths to images extracted from item layout
+  preview: ['', '', ''] // replace with paths to images extracted from item layout
 }, {
   id: 'ccc8a5d5-7cdf-4706-95f2-abc64761400d',
   dateAdded: '2017-06-09T17:32:17.000Z',
@@ -196,10 +180,10 @@ var catalog = [{
   hasNew: false,
   category: 'women',
   fashion: 'Casual style',
-  color: ['Blue', 'Black','Green'],
+  color: ['Black'],
   sizes: ['UK 19'],
   thumbnail: 'img/grey.png', // replace with image extracted from item layout
-  preview: ['full image path 1', 'full image path 2', 'full image path 3'] // replace with paths to images extracted from item layout
+  preview: ['', '', ''] // replace with paths to images extracted from item layout
 }, {
   id: 'e50a3153-7833-4b85-b412-1a39d215fd38',
   dateAdded: '2017-04-25T12:14:41.000Z',
@@ -215,7 +199,7 @@ var catalog = [{
   color: ['Raw umber', 'Dark blue'],
   sizes: ['UK 18', 'UK 19'],
   thumbnail: 'img/khaki.png', // replace with image extracted from item layout
-  preview: ['full image path 1', 'full image path 2', 'full image path 3'] // replace with paths to images extracted from item layout
+  preview: ['img/khaki.png', 'img/khaki1.jpg', 'full image path 3'] // replace with paths to images extracted from item layout
 }, {
   id: 'ff665110-5e7f-435d-b1b4-651c3d5050ca',
   brand: 'Antipodium',
@@ -228,7 +212,7 @@ var catalog = [{
   productType: 'Jersey Tops',
   category: 'women',
   fashion: 'Casual style',
-  color: ['Blue','White'],
+  color: ['Black','White','Green'],
   sizes: ['UK 18'],
   thumbnail: 'img/white.png', // replace with image extracted from item layout
   preview: ['img/white.png', 'img/white1.jpg', 'img/white2.jpg'] // replace with paths to images extracted from item layout
@@ -310,13 +294,10 @@ filter.addEventListener('click', function() {
 })
 
 var show = function(list) {
-  console.log(list)
-	// let name = list.firstChild.innerHTML;
 	let block = list.parentElement;
 	let blockName = block.previousElementSibling;
 	blockName.innerHTML = name;
   blockName.className = 'active'
-  console.log('perent', block.parentElement);
   block.parentElement.firstElementChild.nextElementSibling.innerHTML.className = 'active';
   block.parentElement.firstElementChild.nextElementSibling.innerHTML = list.firstElementChild.innerHTML;
   let arr = blockName.previousElementSibling.innerHTML.replace('<i class="fas fa-caret-down"></i>','');
@@ -330,17 +311,12 @@ tableFilterClick.addEventListener('click' ,function(){
   let fas = document.getElementsByClassName('fas');
   fas[9].classList.toggle('active');
   fas[10].classList.toggle('active');
-
-
-
-  console.log(document.getElementsByClassName('fas'));
 }) //показывает и скрывает выпадающий спикок фильтров
 
 filter.onclick = function(event) {
 	let tableShow = event.target.closest('.row-item');
 	if(!tableShow) return;
   if(!filter.contains(tableShow)) return;
-  // console.log(tableShow.parentElement.firstChild);
   showTableFilter(tableShow);
 };// определяется нажатие в выпадающем списке
 
@@ -358,10 +334,8 @@ var showTableFilter = function(item) {
 } //визуальное отображение выбраного фильтра
 
 var sortItem = function(item,arr) {
-  console.log(item.firstElementChild.innerHTML);
   arr = arr.toLowerCase();
   if (item.firstElementChild.innerHTML == 'Not selected') {
-    console.log('olesu')
     location.reload();
   }
 
@@ -391,8 +365,6 @@ var sortItem = function(item,arr) {
       
         break;
         case 'product type': 
-        console.log(item.firstChild.innerHTML.replace('&amp;','')) 
-        console.log(catalog[i].productType.replace('&',''))
         if (item.firstChild.innerHTML.replace('&amp','') == catalog[i].productType.replace('&','')) {
           newItemArr.push(catalog[i]);
           }
@@ -437,30 +409,15 @@ var newContainer = function(newItemArr) {
   let itemArr = document.getElementsByClassName('main__bestoffers-stock-item-image');
   let itemPrice = document.getElementsByClassName('main__bestoffers-stock-item-arrow_down-price');
   let images = document.getElementsByTagName('img');
-  console.log(newItemArr)
-  // for (let k = 0; k < itemArr.length; k++) {
-
-  //   itemArr[k].style.display = 'none';
-  // }
   for (let i = 0; i < newItemArr.length; i++) {
     itemArr[i].id = newItemArr[i].id;
     images[i].src = newItemArr[i].thumbnail;
     itemArr[i].nextElementSibling.firstChild.nextSibling.innerHTML = newItemArr[i].title;
-    // if (newItemArr[i].price !== newItemArr[i].discountedPrice) {
-    //   itemPrice[i].classList.add('cat');
-    //   a = document.createElement('p');
-    //   a.className = 'main__bestoffers-stock-item-old cat';
-    //   a.innerHTML = '£' + newItemArr[i].price;
-    //   itemPrice[i].appendChild(a)
-    // } else {
-      itemPrice[i].innerHTML = '£' + newItemArr[i].discountedPrice;
-
-    // }
-  }
+    itemPrice[i].innerHTML = '£' + newItemArr[i].discountedPrice;
+    }
   for (let j = newItemArr.length; j < itemArr.length; j++) {
     itemArr[j].style.display = 'none';
     itemArr[j].nextElementSibling.style.display = 'none';
-
   }
 }
 

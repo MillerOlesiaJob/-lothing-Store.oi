@@ -12,9 +12,10 @@
 	<link rel="stylesheet" href="css/normalize.css">
 </head>
 <body>
-<div class="container">
+ 
+<header class="header">
   <div class="container">
-      <header class="header">
+
           <div class="header__top">
             <div class="header__top-logo">
               <a href="start.html" class="header__top-logo-link-big">Template</a>
@@ -39,7 +40,6 @@
         
           <div class="header__navbar">
         
-            <!-- <ul class="header-navbarbar__list"> -->
               <li class="header__navbar-item"><a href="" class="header__navbar-item-link">Women</a></li>
               <li class="header__navbar-item"><a href="" class="header__navbar-item-link">Men</a></li>
               <li class="header__navbar-item"><a href="" class="header__navbar-item-link">Handbags</a></li>
@@ -48,7 +48,6 @@
               <li class="header__navbar-item"><a href="" class="header__navbar-item-link">New Arrivals</a></li>
               <li class="header__navbar-item"><a href="" class="header__navbar-item-link">Clearance</a></li>
               <li class="header__navbar-item"><a href="" class="header__navbar-item-link">Store Locator</a></li>
-            <!-- </ul> -->
             <div class="header__navbar-item-search">
               <input id="window" type="text" class="header__navbar-item-search-window" placeholder="Style Name">
               <i id="icon" class="header__navbar-item-search-icon fas fa-search"></i>
@@ -71,11 +70,17 @@
               </div>
           </div>
         
-        </header>
-    </div>
+        
+       
+  </div>
+</header>
+<div class="bag-header_line">
+  <div class="container">
+    <div class="bag-header">Shopping bag</div>
+  </div>
+</div>
 
-<div class="bag-header">Shopping bag</div>
-
+<div class="container">
 <div id="bag-cont" class="bag-container">
 </div>
 
@@ -90,13 +95,13 @@
       <p id ="discount-info" class="discount-info">Applied discount: <span>£15</span></p>
       <div class="total-info">
         <p id="empty">Empty bag</p>
-        <div id="buy" class="bag-button"><a href=""></a>Checkout</a></div>
+        <div id="buy" class="bag-button"><a href="#">Checkout</a></div>
         <p class="total-price">Total price:<span id="total-price"></span></p>
       </div>
     </div>
   </div>
 </div>
-
+</div>
 
 
 
@@ -132,7 +137,7 @@
 
         <div class="footer__information-right-item">
           <div class="footer__information-right-item_quest">
-            <p class="footer__information-item_caption">Questions</p>
+            <p class="footer__information-item_caption_questions">Questions</p>
             <p class="footer__information-item_link"><i class="fab fa-twitter"></i>Tweet us <b>@template</b></p>
           </div>
           <div class="footer__information-right-item_phone">
