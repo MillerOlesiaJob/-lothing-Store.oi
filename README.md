@@ -1,4 +1,4 @@
-View: https://millerolesiajob.github.io/Final_task_Miller.oi/
+View: https://millerolesiajob.github.io/Clothing-Store.oi/
 
 Technology:
 HTML5
