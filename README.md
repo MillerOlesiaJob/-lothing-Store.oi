@@ -1,4 +1,4 @@
-View: https://millerolesiajob.github.io/Clothing-Store.oi/
+View: https://millerolesiajob.github.io/Clothing-Store/
 
 Technology:
 HTML5
